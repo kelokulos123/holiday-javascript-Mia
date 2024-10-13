@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        ////let:宣告變數(可變化的數)
+        let a = 100;   ///可以保護已被宣告的a
+        
+
+        //let a = 'A'  //會報錯，因為前面已宣告過了 。除非你改變數名稱。或重新指定。
+        a += 100; // a=200
+        
+        console.log(a);
+
+
+        ////////////////////////////let在區塊作用域底下，可獨立宣告成為{}內變數且獨自使用
+
+        if(true){
+            let a ='A'
+            console.log(a);
+            }
+
+        console.log(a);
+
+        ///////////////////////////let在區塊作用域底下，可獨立宣告成為{}內變數且獨自使用
+        if(true){
+            let a ='A', b='B';
+
+            console.log(a, b);
+            }
+
+      //  console.log(a, b);
+
+        ////////////////////const:宣告一個常數，不可變化且常駐的數。目前屬於全域常數。
+        const c = 100;
+
+        if(true){
+            const c = 'C';
+            console.log(c);
+            }
+
+        
+        console.log(c);
+
+        ////////////////////////////////////////
+        console.clear();
+
+      ///////////////////////////
+      // null 塞一個值為，"沒有東西的特別物件"，有賦予值:null
+      // undefined 就是沒有任何東西指定給他，也就是沒有賦予值
+      //空值:STRING 空字串
+      // NaN:number。 NaN :為非數字，NOT A NUMBER
+
+        let aa = null;  // null 塞一個值為，"沒有東西的特別物件"，有賦予值:null
+        let bb ;   //// undefined 就是沒有任何東西指定給他，也就是沒有賦予值
+        let cc = '';  // STRING 空字串
+        let dd = 5* 'A'; //number。 NaN :為非數字，NOT A NUMBER
+
+    </script>
+
+
+
+
+
+</body>
+</html>

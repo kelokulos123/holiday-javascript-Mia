@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        ///自訂 函式 function , 名字為hello，他沒有傳遞參數，印出hello world////
+        function hello(name = 'to You') {
+            console.log(`hello world, ${name} !!`);
+        }
+
+        // 呼叫名為hello的函式，透過()符號執行
+        hello('Loki');
+        hello('Joker');
+        hello('Van');
+        hello();
+
+        //宣告一個變數，這變數為function的變數
+        console.clear();
+        varHello = function (name) {
+            console.log(`hello ${name} !!`);
+        };
+
+
+        (function () {
+            console.log('hello world');
+        })();
+        ///左邊()匿名函式宣告，右邊()執行
+
+        console.clear();
+
+
+        say1 = function (name) {
+            str = 'hello ' + name;
+            return str;
+        }
+
+        ans = say1('loki');
+        console.log(ans);
+
+
+        say2 = function (name) {
+            return 'hello ' + name;
+        }
+
+        console.log(say2('loki'));
+
+
+
+
+        say3 = function (name) {
+            console.log('--------------------------')
+            return 'hello ' + name;
+        }
+
+        console.log(say3('loki'));
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

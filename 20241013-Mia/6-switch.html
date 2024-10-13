@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        switch(variable){
+        case'A':
+        todo
+        break;
+        case'B':
+        todo
+        breaj;
+        default:
+        todo
+        reak;
+          }
+        */
+
+        const lang = 'en';
+
+        switch (lang) {
+            case 'tw':
+                msg = '台灣';
+                break;  //迫壞switch,終止這個switch後續工作
+            case 'kr':
+                msg = '韓國';
+                break;
+            case 'en':
+                msg ='英國';
+                break;
+            case 'jp':
+                msg = '日本';
+                break;
+            default:
+                msg = "unknown";
+                break;
+        }
+
+
+        console.log(msg);
+
+////////////會員編號
+        const memberState = 'new';
+
+        switch (memberState){
+            case 'new':
+                console.log('歡迎使用者，您是第一次使用，是否需加入會員?');
+                //console.log('請問您需要什麼服務呢?')
+                //break;
+            default:
+                console.log('請問您需要什麼服務呢?')
+                break;
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

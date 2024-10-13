@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        console.log(b);
+
+
+        //  a=100; //臨時變數
+        var b = 200; //宣告變數
+        var c ; // 宣告，只是未定義任何值，故 undefined
+
+        function test(){
+            var d = 100;
+            console.log(b);
+            console.log(d);
+        }
+
+        test();
+
+
+        console.log(b);
+      //  console.log(d); 不認d,因為d是區間變數，無法得知
+
+
+      function test2(){
+            var b = 100;   //function的{}是一個區間，是一個區塊，也是一個全域變數
+            console.log(b);
+        }
+
+        console.log('b=', b);
+        test2();
+        console.log('b=', b);
+
+////////////////////////////////////////////////////////
+if(true){
+    var e=100;   //if的{}不是一個區間是一個區塊，他仍是一個全域變數
+    console.log(e); 
+}
+
+console.log(e);
+
+////////////////////////////////
+console.log('e =', e);
+if(true){
+    var e=100;   //if的{}不是一個區間是一個區塊，他仍是一個全域變數
+    console.log(e); 
+}
+
+console.log('e=' ,e);
+
+var e = true;   //
+console.log(e);
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>
